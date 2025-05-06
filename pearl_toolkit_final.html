@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pearl Toolkit</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    :root {
+      --primary-color: #cfe8dc;
+      --accent-color: #0f2f35;
+      --text-color: #0f2f35;
+      --card-bg: #ffffffee;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      width: 300%;
+      height: 300%;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 48px,
+        rgba(0, 0, 0, 0.02) 48px,
+        rgba(0, 0, 0, 0.02) 96px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        #d8fdd3,
+        #d8fdd3 48px,
+        #b1f3a7 48px,
+        #b1f3a7 96px
+      );
+      mask-image: repeating-linear-gradient(
+        -45deg,
+        black 0,
+        black 48px,
+        transparent 48px,
+        transparent 96px
+      );
+      z-index: 0;
+      opacity: 0.1;
+      pointer-events: none;
+    }
+
+    .main-box {
+      background: var(--card-bg);
+      border-radius: 2rem;
+      max-width: 800px;
+      width: 90%;
+      padding-bottom: 2rem;
+      overflow: hidden;
+      z-index: 1;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    header img {
+      width: 100%;
+      display: block;
+    }
+
+    .content {
+      padding: 2rem;
+    }
+
+    h1 {
+      color: var(--accent-color);
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #e4f4ed;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "✔️ ";
+      margin-right: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding-top: 1rem;
+      font-size: 0.8rem;
+      color: #4a6d66;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-box">
+    <header>
+      <img src="banner.jpg" alt="Pearl Toolkit Banner" />
+    </header>
+    <div class="content">
+      <h1>Pearl Toolkit: Unlock the Unseen on Hyperliquid</h1>
+      <p>The first NFT to bring powerful tools and exclusive access to the Hyperliquid network in one place. From seamless wallet management to cutting-edge trading bots, Pearl Toolkit is your gateway to mastering Hyperliquid and seizing endless opportunities.</p>
+      <h2>What You Get:</h2>
+      <div class="card"><strong>Wallet Manager:</strong> Effortlessly manage your assets across Hyperliquid.</div>
+      <div class="card"><strong>Minter Bot:</strong> Automate NFT minting for maximum efficiency.</div>
+      <div class="card"><strong>Sniper Bot:</strong> Target high-value opportunities with precision.</div>
+      <div class="card"><strong>Bid Bot:</strong> Optimize your bidding strategy for auctions.</div>
+      <div class="card"><strong>Multichain Alphas:</strong> Access exclusive insights from top blockchain networks.</div>
+      <div class="card"><strong>Trade Signals:</strong> Stay ahead with real-time market signals.</div>
+      <div class="card"><strong>News:</strong> Get the latest Hyperliquid updates delivered to you.</div>
+      <h2>Choose Your Plan:</h2>
+      <ul>
+        <li><strong>Blue Pearl:</strong> Hold the NFT and pay $15 monthly for full access.</li>
+        <li><strong>Green Pearl:</strong> Hold the NFT and pay $15 quarterly for cost-effective access.</li>
+        <li><strong>Gold Pearl:</strong> Hold the NFT and pay $15 semi-annually for premium access.</li>
+      </ul>
+      <p><strong>Dive into Hyperliquid with Pearl Toolkit. Mint your NFT today and unlock a world of possibilities!</strong></p>
+    </div>
+    <footer>© 2025 Pearl Toolkit · Built for Hyperliquid explorers</footer>
+  </div>
+</body>
+</html>
